@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" media="screen and (min-width: 640px)" href="scss/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="scss/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    
+    <title>ToTheMoon</title>
+</head>
+<body>
+    <main>
+        <section class="full-height austronaut">
+            <button class="menu-btn">
+                <span class="burger-menu"></span>
+                <span class="menu-btn.open"></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="window.location.reload(true)" class="menu-options">Our story</a></li>
+                    <li><a href="#" onclick="window.location.reload(true)" class="menu-options">Space venture</a></li>
+                    <li><a href="#" onclick="window.location.reload(true)" class="menu-options">About <span class="desktop-br"><br></span>Major Tom</a></li>
+                </ul>
+            </nav>
+            <aside class="box">
+                <h1>To the moon</h1>
+                <a class="arrow1" href="#" onclick="window.location.reload(true)">Read our story<span id="arrow1">&#8594;</span></a>
+            </aside>
+        </section>
+        <section class="full-height text">
+            <div class="flex-box1">
+                <div class="flex-box2">
+                    <header>
+                        <h1 class="space head">Space</h1>
+                        <h1 class="venture head">Ventures</h1>
+                    </header>
+                    <article>
+                        <h2>Ground Control to Major Tom</h2>
+                        <p class="article-text">
+                            Ground Control to Major Tom. Take your protein 
+                            pills and put your helmet <br>
+                            on. Ground Control to Major Tom (ten, nine, eight, seven, six).<span class="desktop-br"><br></span>
+                            Commencing <span class="mobile-br"><br></span>
+                            countdown, engines on (five, four, three). 
+                            Check ignition<span class="desktop-br"><br></span>
+                            and may God's<span class="mobile-br"><br></span>
+                            love be with you (two, one, liftoff). This is Ground Control <span class="desktop-br"><br></span>
+                            to Major Tom.<br>
+                            <br class="br">
+                            You've really made the grade. And the papers 
+                            want to know whose shirts <br>you wear. Now it's time 
+                            to leave the capsule if you dare. This is Major Tom<span class="desktop-br"><br></span>
+                            to Ground Control. I'm stepping through the door.
+                        </p>
+                    </article>
+                    <aside class="quote-text">
+                        <em><span class="quote sign1">"</span>And I'm floating in a most peculiar way. <br>
+                        And the stars look very different today. <br>For here.<span class="quote sign2">”</span></em>
+                        </aside>
+                </div>
+                <div class="flex-box2">
+                    <section class="presistence">
+                        <p>
+                            <em>Persistence is very <br>
+                            important. You <br>
+                            should not give up <br>
+                            unless you are <br>
+                            forced to give up.</em>
+                        </p>
+                    </section>
+                    <article>
+                        <p class="article-text">
+                            Am I sitting in a tin can. Far above the world. 
+                            Planet Earth is blue. And <br>there's nothing I can do. 
+                            Though I'm past one hundred thousand miles.<span class="desktop-br"><br> </span> 
+                            I'm<span class="mobile-br"><br> </span> 
+                            feeling very still. And I think my spaceship. <span class="desktop-br"><br> </span>knows 
+                            which way to go. Tell my <span class="mobile-br"><br> </span>wife I love her <span class="desktop-br"><br> </span>very much she knows.<span class="mobile-br"><br> </span>
+                            <br class="br"><img id="major-tom" src="img/major_tom.jpg" alt="Major Tom">
+                            Ground Control to Major Tom. Your circuit's dead,
+                            there's something wrong.<span class="mobile-br"><br> </span>Can you hear me, Major Tom? 
+                            Can <span class="desktop-br"><br> </span>you hear me, Major Tom? Can you hear <span class="mobile-br"><br> </span>me, Major Tom? 
+                            Can you "Here am I floating 'round my tin can.<span class="mobile-br"><br> </span>
+                            <span class="line-space">Far above the moon<br>
+                            Planet Earth is blue<br>
+                            And there's nothing I can do</span>
+                        </p>
+                        <a class="arrow2" href="#" onclick="window.location.reload(true)">Read more about major Tom<span id="arrow2">&#8594;</span></a>
+                    </article>
+                </div>
+            </div>
+            <footer>
+                <p>I don’t know where I’m going from here, but I promise it won’t be boring. <span class="mobile-br"><br></span>You should accept cookies.</p>
+                <button class="accept-cookies">Accept</button>
+            </footer>
+        </section>
+    </main>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if(!menuOpen){
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+    </script>
+</body>
+</html>
