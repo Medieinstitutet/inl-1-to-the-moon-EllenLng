@@ -1,0 +1,237 @@
+/*--------------------------------*/
+/*----------LAYOUTA-USTRONAUT-----*/
+/*--------------------------------*/
+.full-height{
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.austronaut{
+    background-image: url("../img/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 42%;
+}
+/*--------------------------------*/
+/*----------MENUBUTTON------------*/
+/*--------------------------------*/
+.menu-btn{
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    left: 95%;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-left: 0;
+}
+.burger-menu{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(124, 124, 131);
+    transition: all 0.5s ease-in-out;
+}
+.burger-menu::before, .burger-menu::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 5px ;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.burger-menu::before{
+    transform: translateY(-16px);
+}
+.burger-menu::after{
+    transform: translateY(16px);
+}
+/*--------------------------------*/
+/*----------menubutton-visuals----*/
+/*--------------------------------*/
+.menu-btn.open .burger-menu{
+    transform: translateX(-50px);
+    background:transparent;
+    box-shadow: none;
+} 
+.menu-btn.open .burger-menu::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .burger-menu::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+} 
+/*--------------------------------*/
+/*----------eventbox--------------*/
+/*--------------------------------*/
+.box{
+    position: absolute;
+    box-sizing:content-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 26.5rem;
+    width: 27rem;
+    border: 4px solid black;
+    top: 3rem;
+    left:8rem;
+    background-color: rgba(255, 255, 255, 0.481);
+}
+.box h1{
+    font-weight: 600;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+}
+#arrow1{
+    font-size: 1.5rem;
+}
+.box .arrow1{
+    position: absolute;
+    left: 17.5rem;
+    top: 24rem;
+    font-weight: 400;
+    font-size: 18px; 
+    text-decoration: none;
+    color: black;
+}
+.arrow1:hover #arrow1{
+    position: relative;
+    left: 12px
+}
+.arrow1 #arrow1{
+    position: relative;
+    left:0;
+    transition: left 0.5s ease-in-out;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*-----------TEXTSITE-------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.flex-box1{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    /* flex: 1; */
+    background-color: rgba(0, 0, 0, 0.5); 
+} 
+.flex-box2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.text{
+    background-image: url(../img/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover; 
+    color: white;
+    z-index: -10;
+}
+.space{ 
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #030202, 2px 2px 2px #030202;
+    position: absolute;
+    font-size: 6rem;
+    margin-left: 120px;
+    margin-top: 40px;
+    z-index: 1;
+}
+.venture{
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(204, 204, 204, 0.5);
+    text-shadow: 2px 2px 2px #030202, 2px 2px 2px #030202;
+    font-size: 8rem;
+    z-index: 0;
+    margin-left: 120px;
+    margin-top: 35px;
+    padding-top: 40px;
+
+}
+
+h2{
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+article{
+    width: 425px;
+    margin-left: 100px;
+    font-size:13px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-weight: 200;
+    line-height: 20px;
+}
+.line-space{
+    line-height: 50px 0px;
+}
+article .br {
+    content: '';
+    display: block;
+    margin: 5px 0;
+}
+.quote{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 20px 10px 20px 60px;
+    margin-left: 110px;
+}
+.presistence{
+    position: relative;
+    margin-left: 130px;
+    margin-top: 50px;
+    font-size: 200%;
+    font-weight: 100;
+    background: -webkit-linear-gradient(rgba(182, 0, 139, 0.5) ,rgba(125, 125, 125, 0.5), rgba(182, 0, 139, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#major-tom{
+    width:110px;
+    height:170px;
+    position: relative;
+    /* margin-left: 275px; */
+    float: right;
+    margin-top:-45px;
+}
+.arrow2{
+    font-size: 10px;
+    color: red;
+}
+footer{
+    width: 100px;
+    border: 1px solid blue;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+.accept-cookies{
+    position: relative;
+    bottom: 35px;
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+.mobile-br{
+    display: none;
+}
+
